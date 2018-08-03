@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#181717"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed.registerform.InstLogin">
+
+    <EditText
+        android:id="@+id/txtemail2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColorHint="@color/background"
+        android:background="@drawable/inst_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtpass2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textColorHint="@color/background"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/inst_text"
+        android:layout_below="@+id/txtemail2"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:textSize="17dp"
+        android:background="@color/background2"
+        android:layout_below="@+id/txtpass2"
+        android:onClick="loginMe2"
+        android:id="@+id/loginMe2"
+        android:textColor="#f7f3f3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you dont have acount ?"
+        android:id="@+id/tv3"
+        android:textSize="17dp"
+        android:textColor="#f7f3f3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loginMe2"
+        android:layout_alignLeft="@+id/txtpass2"
+        android:layout_alignStart="@+id/txtpass2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please Sign Up"
+        android:id="@+id/tv4"
+        android:textSize="17dp"
+        android:onClick="reg2"
+        android:textColor="@color/background"
+        android:layout_alignBaseline="@+id/tv3"
+        android:layout_alignRight="@+id/txtpass2" />
+
+</RelativeLayout>

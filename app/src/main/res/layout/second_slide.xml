@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_slide2">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="160dp"
+        android:id="@+id/img"
+        android:src="@drawable/teacher"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="@string/slide2_title"
+        android:textSize="25dp"
+        android:id="@+id/slide_title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:text="@string/slide2_desc"
+        android:id="@+id/slide_desc"/>
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="btnOn2"
+        android:layout_below="@+id/slide_desc"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/on"
+        android:layout_marginTop="6dp"/>
+</RelativeLayout>

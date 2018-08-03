@@ -41,6 +41,6 @@ public class Ins extends AppCompatActivity implements RecycleVAdapter.ItemListen
 
     @Override
     public void onItemClick(Dmodel item) {
-        Toast.makeText(this, "wwwwwwwwwwwwwwwwwww", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), item.text + " is clicked", Toast.LENGTH_SHORT).show();
     }
 }
